@@ -1,0 +1,42 @@
+plugins {
+    id("java")
+    id("org.jetbrains.intellij") version "1.6.0"
+}
+
+group = "com.wren.plugin"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation("org.antlr:antlr4-intellij-adaptor:0.1")
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+}
+
+// Configure Gradle IntelliJ Plugin
+// Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
+intellij {
+    version = '2021.3'
+    type = 'IC' // IU (ultimate) | IC (community)
+    plugins = ['com.intellij.java'] // <- it needs for tests
+}
+
+
+tasks {
+
+    patchPluginXml {
+        sinceBuild.set("213")
+        untilBuild = '299.*'
+    }
+
+    signPlugin {
+        certificateChain.set(System.getenv("CERTIFICATE_CHAIN"))
+        privateKey.set(System.getenv("PRIVATE_KEY"))
+        password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
+    }
+
+    publishPlugin {
+        token.set(System.getenv("PUBLISH_TOKEN"))
+    }
+}
