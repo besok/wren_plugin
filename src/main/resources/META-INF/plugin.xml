@@ -1,19 +1,20 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-    <id>com.wren.plugin</id>
+    <id>io.wren.plugin</id>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Wren_plugin</name>
+    <name>Wren</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="" url="https://wren.io/">Wren community</vendor>
+    <vendor email="zhguchev@gmail.com" url="https://wren.io/">Wren community. Boris Zhguchev</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
-    <description>Plugin for the Wren language, including the syntax highlighting, autocomplete and many more</description>
+    <description>Plugin for the Wren language, including the syntax highlighting, autocomplete and many more
+    </description>
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
@@ -22,6 +23,21 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
+        <fileType name="Wren" implementationClass="io.wren.plugin.WrenLanguageFileType" fieldName="INSTANCE"
+                  language="Wren" extensions="wren"/>
+        <lang.ast.factory language="Wren" implementationClass="io.wren.plugin.parser.WrenAstFactory"/>
+        <lang.parserDefinition language="Wren"
+                               implementationClass="io.wren.plugin.parser.WrenParserDefinition"/>
+        <lang.braceMatcher language="Wren" implementationClass="io.wren.plugin.BraceMatcher"/>
+        <lang.commenter language="Wren" implementationClass="io.wren.plugin.WrenCommenter"/>
+
+        <lang.syntaxHighlighterFactory language="Wren"
+                                       implementationClass="io.wren.plugin.highlight.WrenSyntaxHighlighterFactory"/>
+        <colorSettingsPage implementation="io.wren.plugin.highlight.WrenColorSettingsPage"/>
+<!--        <lang.formatter language="Wren"-->
+<!--                        implementationClass="io.wren.plugin.format.WrenCodeFormatter"/>-->
+        <codeStyleSettingsProvider implementation="io.wren.plugin.style.WrenCodeStyleSettingsProvider"/>
+        <langCodeStyleSettingsProvider implementation="io.wren.plugin.style.WrenCodeStyleLangSettingsProvider"/>
 
     </extensions>
 </idea-plugin>

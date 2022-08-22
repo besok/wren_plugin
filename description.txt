@@ -1,0 +1,15 @@
+The plugin to support the wren language (wren.io).
+    <br>
+    This plugin provides a stable set of functions
+    to work with the wren language in the environment of Intellij products.
+    <br>
+    Features:
+    <br>
+    <ul>
+        <li>Syntax highlighting</li>
+        <li>Code formatting</li>
+        <li>Comments</li>
+        <li>Settings</li>
+        <li>Documentation</li>
+        <li>Folding</li>
+    </ul>

@@ -1,9 +1,10 @@
 plugins {
     id("java")
-    id("org.jetbrains.intellij") version "1.6.0"
+    id("org.jetbrains.intellij") version "1.8.0"
+    id 'antlr'
 }
 
-group = "com.wren.plugin"
+group = "io.wren.plugin"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -11,19 +12,28 @@ repositories {
 }
 dependencies {
     implementation("org.antlr:antlr4-intellij-adaptor:0.1")
+    antlr "org.antlr:antlr4:4.9.1"
     testImplementation group: 'junit', name: 'junit', version: '4.13.2'
 }
 
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
-    version = '2021.3'
+    version = '2022.2'
     type = 'IC' // IU (ultimate) | IC (community)
     plugins = ['com.intellij.java'] // <- it needs for tests
 }
 
 
 tasks {
+//    withType {
+//        sourceCompatibility = "15"
+//        targetCompatibility = "15"
+//    }
+    generateGrammarSource {
+        arguments += ['-package', 'io.wren.gramma']
+        outputDirectory = new File(buildDir.toString() + "/generated-src/antlr/main/io/wren/gramma/")
+    }
 
     patchPluginXml {
         sinceBuild.set("213")

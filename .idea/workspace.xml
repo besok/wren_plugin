@@ -5,22 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49361bf9-b686-4be1-9ca1-649ddd044edc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.run/Run IDE with Plugin.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/change-notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/antlr/WrenLexer.g4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/antlr/WrenParser.g4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gen/WrenLexer.interp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gen/WrenLexer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gen/WrenLexer.tokens" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/BraceMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/WrenAstUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/WrenCommenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/WrenLanguageFileType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/WrenPluginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/format/WrenCodeFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/highlight/WrenColorSettingsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/highlight/WrenSyntaxHighlighter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/highlight/WrenSyntaxHighlighterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/highlight/WrenSyntaxHighlighterKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/WrenAstFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/WrenParserAdaptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/WrenParserDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/nodes/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/nodes/ClassDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/nodes/FunctionDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/nodes/GhostNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/nodes/ImportModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/nodes/Statement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/nodes/WrenFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/parser/nodes/WrenNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/style/WrenCodeStyle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/style/WrenCodeStyleLangSettingsProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/style/WrenCodeStyleSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/style/WrenCodeStyleSettingsProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/wren/plugin/style/WrenSimplePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/pluginIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/common/binary_tree.wren" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/common/binary_tree_gc.wren" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/common/call.wren" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/common/call_wren_root.wren" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/common/delta_blue.wren" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/common/error.wren" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/common/get_variable.wren" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wren_examples/common/method_call.wren" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +81,60 @@
             </after_sync>
           </activation>
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="wren_plugin" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="wren_plugin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="wren_plugin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="wren_plugin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="intellij" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="wren_plugin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="s2o8dhhs" />
@@ -62,26 +146,99 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2DfOHKxXXIDrHc5ltaBJVLCWfVa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true"
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/projects/wren_plugin/src/main/resources/icons",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\wren_plugin\src\main\resources\icons" />
+      <recent name="C:\projects\wren_plugin" />
+      <recent name="C:\projects\wren_plugin\wren_examples" />
+      <recent name="C:\projects\wren_plugin\src\main\java\com\wren\plugin\gramma" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\wren_plugin\src\main\antlr" />
+      <recent name="C:\projects\wren_plugin\src\main\antlr\io\wren\gramma\" />
+      <recent name="C:\projects\wren_plugin\src\main\antlr\com\wren" />
       <recent name="C:\projects\wren_plugin\src\main\resources\META-INF" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.wren.plugin" />
+      <recent name="com.wren" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Run Plugin">
+    <configuration name="wren_plugin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="wren_plugin [generateGrammarSource]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateGrammarSource" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.wren_plugin [clean]" />
+        <item itemvalue="Gradle.wren_plugin [generateGrammarSource]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,7 +248,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661086584267</updated>
-      <workItem from="1661086586368" duration="521000" />
+      <workItem from="1661086586368" duration="12796000" />
     </task>
     <servers />
   </component>
@@ -109,7 +266,21 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/wren/plugin/highlight/WrenSyntaxHighlighter.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

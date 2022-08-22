@@ -1,0 +1,6 @@
+- init version of the plugin
+ - docs
+ - syntax highlighting
+ - folding
+ - setting
+
