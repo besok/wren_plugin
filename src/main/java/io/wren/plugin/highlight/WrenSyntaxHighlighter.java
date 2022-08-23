@@ -29,13 +29,18 @@ public class WrenSyntaxHighlighter extends SyntaxHighlighterBase {
             return switch (((TokenIElementType) tokenType).getANTLRTokenType()) {
                 case IDENTIFIER -> WrenSyntaxHighlighterKeys.ID;
                 case DOT -> WrenSyntaxHighlighterKeys.DOT;
-                case DECIMAL_LITERAL , HEX_LITERAL , FLOAT_LITERAL , HEX_FLOAT_LITERAL ->
+                case STRING_LITERAL -> WrenSyntaxHighlighterKeys.STRING;
+                case LBRACE, RBRACE -> WrenSyntaxHighlighterKeys.BRACES;
+                case LBRACK, RBRACK -> WrenSyntaxHighlighterKeys.BRACKETS;
+                case LPAREN, RPAREN -> WrenSyntaxHighlighterKeys.PARENTHESES;
+                case COMMENT , LINE_COMMENT -> WrenSyntaxHighlighterKeys.COMMENTS;
+                case DECIMAL_LITERAL, HEX_LITERAL, FLOAT_LITERAL, HEX_FLOAT_LITERAL ->
                         WrenSyntaxHighlighterKeys.NUMBERS;
-                case CLASS_T , STATIC_T, VAR_T, CONSTRUCT,FOR_T,IF_T,FOREIGN_T ->
+                case AS, BREAK_T, CLASS_T, CONTINUE_T, ELSE_T, FALSE_T, STATIC_T, VAR_T, IMPORT_T, IN, IS, CONSTRUCT, NULL_T, RETURN_T, TRUE_T, WHILE_T, FOR_T, IF_T, FOREIGN_T ->
                         WrenSyntaxHighlighterKeys.KEYWORDS;
                 default -> EMPTY_KEYS;
             };
         } else return EMPTY_KEYS;
-
     }
 }
+
