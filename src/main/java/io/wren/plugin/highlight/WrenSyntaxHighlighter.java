@@ -29,7 +29,7 @@ public class WrenSyntaxHighlighter extends SyntaxHighlighterBase {
             return switch (((TokenIElementType) tokenType).getANTLRTokenType()) {
                 case IDENTIFIER -> WrenSyntaxHighlighterKeys.ID;
                 case DOT -> WrenSyntaxHighlighterKeys.DOT;
-                case STRING_LITERAL -> WrenSyntaxHighlighterKeys.STRING;
+                case STRING_LITERAL, TEXT_BLOCK -> WrenSyntaxHighlighterKeys.STRING;
                 case LBRACE, RBRACE -> WrenSyntaxHighlighterKeys.BRACES;
                 case LBRACK, RBRACK -> WrenSyntaxHighlighterKeys.BRACKETS;
                 case LPAREN, RPAREN -> WrenSyntaxHighlighterKeys.PARENTHESES;

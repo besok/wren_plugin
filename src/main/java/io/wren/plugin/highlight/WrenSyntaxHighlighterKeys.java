@@ -21,6 +21,8 @@ public class WrenSyntaxHighlighterKeys {
     public static TextAttributesKey[] BRACKETS = new TextAttributesKey[]{createTextAttributesKey("BRACKETS", DefaultLanguageHighlighterColors.BRACKETS)};
     public static TextAttributesKey[] PARENTHESES = new TextAttributesKey[]{createTextAttributesKey("PARENTHESES", DefaultLanguageHighlighterColors.PARENTHESES)};
 
+    public static TextAttributesKey[] STATIC = new TextAttributesKey[]{createTextAttributesKey("STATIC", STATIC_FIELD)};
+
     public static TextAttributesKey[] COMMENTS = new TextAttributesKey[]{
             createTextAttributesKey("BLOCK_COMMENTS", BLOCK_COMMENT),
             createTextAttributesKey("LINE_COMMENTS", LINE_COMMENT)

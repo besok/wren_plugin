@@ -1,6 +1,6 @@
 // Ported from the Python version.
 
-class Tree {
+foreign class Tree {
   construct new(item, depth) {
     _item = item
     if (depth > 0) {
