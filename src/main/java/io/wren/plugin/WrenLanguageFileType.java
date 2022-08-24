@@ -1,6 +1,7 @@
 package io.wren.plugin;
 
 import com.intellij.openapi.fileTypes.LanguageFileType;
+import com.intellij.util.ui.UIUtil;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -25,12 +26,13 @@ public class WrenLanguageFileType extends LanguageFileType {
     }
 
     @Override
-    public  @NotNull String getDefaultExtension() {
+    public @NotNull String getDefaultExtension() {
         return "wren";
     }
 
     @Override
     public @Nullable Icon getIcon() {
-        return WrenLanguage.ICON;
+        if (UIUtil.isUnderDarcula()) return WrenLanguage.ICON_DARK;
+        else return WrenLanguage.ICON_LIGHT;
     }
 }

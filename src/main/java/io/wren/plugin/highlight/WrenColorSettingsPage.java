@@ -16,7 +16,7 @@ import java.util.Map;
 public class WrenColorSettingsPage implements ColorSettingsPage {
     @Override
     public @Nullable Icon getIcon() {
-        return WrenLanguage.ICON;
+        return WrenLanguage.ICON_LIGHT;
     }
 
     @Override
