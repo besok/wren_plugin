@@ -38,6 +38,8 @@
 <!--                        implementationClass="io.wren.plugin.format.WrenCodeFormatter"/>-->
         <codeStyleSettingsProvider implementation="io.wren.plugin.style.WrenCodeStyleSettingsProvider"/>
         <langCodeStyleSettingsProvider implementation="io.wren.plugin.style.WrenCodeStyleLangSettingsProvider"/>
+        <lang.psiStructureViewFactory language="Wren"
+                                      implementationClass="io.wren.plugin.structure.WrenStructureViewFactory"/>
         <lang.foldingBuilder language="Wren"
                              implementationClass="io.wren.plugin.BaseWrenFoldingBuilder"/>
 

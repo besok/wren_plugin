@@ -42,7 +42,7 @@ public class WrenAstUtils {
         } else return false;
     }
 
-    public static WrenElementHelper help(PsiElement element) {
+    public static WrenElementHelper ast(PsiElement element) {
         return new WrenElementHelper(element);
     }
 
@@ -76,7 +76,7 @@ public class WrenAstUtils {
                   else if(e instanceof ANTLRPsiNode node)
                       return Arrays
                               .stream(node.getChildren())
-                              .map(WrenAstUtils::help)
+                              .map(WrenAstUtils::ast)
                               .map(WrenElementHelper::id)
                               .flatMap(Optional::stream)
                               .findFirst();
@@ -84,10 +84,5 @@ public class WrenAstUtils {
               });
           }
 
-//        def id: Option[IdNode] = elemOpt.flatMap {
-//            case elem: IdNode       => Some(elem)
-//            case elem: ANTLRPsiNode => elem.getChildren.collectFirst(_.id).flatten
-//            case _                  => None
-//        }
     }
 }

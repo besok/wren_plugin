@@ -8,7 +8,6 @@ import com.intellij.openapi.project.DumbAware;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.impl.source.tree.LeafElement;
 import com.intellij.psi.util.PsiTreeUtil;
-import io.wren.gramma.WrenParser;
 import io.wren.plugin.parser.nodes.Block;
 import io.wren.plugin.parser.nodes.ClassDef;
 import io.wren.plugin.parser.nodes.FunctionDef;
@@ -39,7 +38,7 @@ public class BaseWrenFoldingBuilder extends FoldingBuilderEx implements DumbAwar
     public @Nullable String getPlaceholderText(@NotNull ASTNode node) {
         if (isRule(node, RULE_block)) return "{..}";
         else if (isRule(node, RULE_classDefinition))
-            return help(node.getPsi()).id().map(LeafElement::getText).orElse(node.getElementType().toString()) + " {..}";
+            return ast(node.getPsi()).id().map(LeafElement::getText).orElse(node.getElementType().toString()) + " {..}";
         else if (isRule(node, RULE_function))
             return node.getFirstChildNode().getText() + " (..) {..}";
         else return node.getElementType().toString();
